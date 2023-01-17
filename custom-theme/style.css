@@ -1,0 +1,214 @@
+/*
+Theme Name: Practice Buzz (Listing)
+Theme URI: http://listing-pb.infinityfreeapp.com/
+Author: Girish
+Author URI: https://girishgv21.github.io/
+Description: Custom theme developed for listing app
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: practicebuzz
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.listing-thumb img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+h1 {
+    font-size: 30px;
+      line-height: 1.4;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    background: #011345;
+    padding: 20px 0;
+}
+
+header h3 {
+    color: white;
+}
+
+.listing-grid {
+    padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px 30px;
+}
+
+.listing-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.listing-order {
+    padding: 5px 10px;
+    background: lightgray;
+    display: inline-block;
+    border-radius: 50px;
+    margin-top: auto;
+}
+
+.listing-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer {
+    background: #011345;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.listing-column img {
+    width: 100%;
+}
+
+.page-wrap {
+    padding: 60px 0;
+}
+
+.page-wrap.page-not-found {
+    text-align: center;
+}
+
+.page-wrap.page-not-found h1 {
+    margin-bottom: 20px;
+}
+
+a {
+    color: #a0915f;
+}
+
+.page-wrap {
+    text-align: center;
+}
+
+.page-content p {
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+a.btn {
+    display: inline-block;
+    background: #a0915f;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.listing-column {
+    text-align: left;
+}
+
+section.page-hero {
+    padding-bottom: 30px;
+}
+
+.post-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-pagination a, .post-pagination span {
+    margin: 0 7px;
+    font-weight: 600;
+}
+
+.home .page-wrap {
+    min-height: calc(100vh - 93px - 60px);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-title {
+    padding: 20px 0 10px;
+}
+
+.listing-column {
+    position: relative;
+}
+
+a.link-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    bottom: 0;
+}
+
+.thumb {
+    max-width: 500px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.thumb img {
+    width: 100%;
+}
+
+@media (max-width: 980px) {
+    .listing-grid {
+            grid-template-columns: 1fr 1fr;
+    }
+} 
+
+@media (max-width: 500px) {
+    .listing-grid {
+            grid-template-columns: 1fr;
+    }
+    
+    header img {
+            max-width: 100px;
+    }
+
+    header a.btn {
+            font-size: 14px;
+            padding: 5px 10px;
+    }
+    
+    h1 {
+            font-size: 25px;
+    }
+} 
+
